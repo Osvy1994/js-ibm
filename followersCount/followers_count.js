@@ -9,6 +9,9 @@ const alertUser = () => {
   if (counter >= 10) {
     alert(`Congratulations your page has ${counter} followers`)
   }
+  if (counter >= 20) {
+    alert(`Congratulations your page has ${counter} followers`)
+  }
 }
 
 const increaseCount = () => {
