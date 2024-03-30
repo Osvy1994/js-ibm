@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Speed Test Analysis</title>
+  </head>
+  <body>
+    <h1>Speed Typing Analysis</h1>
+
+    <label for="inputText">Type the following text:</label><br />
+    <textarea
+      id="inputText"
+      cols="50"
+      rows="5"
+      readonly
+      placeholder="Get ready to type..."
+    ></textarea
+    ><br />
+
+    <label for="userInput">Your typing:</label><br />
+    <textarea
+      id="userInput"
+      cols="50"
+      rows="5"
+      placeholder="Start typing when ready"
+    ></textarea
+    ><br />
+    <button id="startBtn" onclick="startTest()">Start Test</button>
+    <button id="endBtn" disabled onclick="endTest()">End Test</button>
+    <button id="restartBtn" onclick="restartTest()">Restart</button>
+    <div id="output"></div>
+    <script src="./speedAnalysis.js"></script>
+    <div>
+      <p id="info"></div></p>
+      <h1 id="timeResult">Time:</h1>
+      <h1 id="wordsCount">Words:</h1>
+      <h1 id="wordsPerMinute">Words per Minute:</h1>
+    </div>
+  </body>
+</html>
